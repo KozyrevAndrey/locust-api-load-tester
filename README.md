@@ -25,7 +25,7 @@ A comprehensive and flexible foundation for creating API load tests using Locust
 
 ## 🛠️ Installation
 
-### Prerequisites
+### Requirements
 
 - Python 3.12
 - Poetry (recommended) or pip
