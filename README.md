@@ -55,4 +55,5 @@ You can access the web interface at `http://0.0.0.0:8089`
 ## 🙏 Acknowledgments
 
 [Locust](https://github.com/locustio/locust) - Modern load testing framework
+
 [Poetry](https://python-poetry.org/) - Dependency management
