@@ -1,0 +1,59 @@
+# 🚀 Locust API Load Testing Framework
+
+A comprehensive and flexible foundation for creating API load tests using Locust. This repository provides a well-structured template for performance testing REST APIs with realistic user scenarios and comprehensive monitoring.
+
+## 🎯 Features
+
+- **Multi-endpoint Testing**: Support for GET, POST, PUT, DELETE operations
+- **User Session Management**: Stateful testing with data persistence between requests
+- **Multiple User Types**: Regular users and admin users with different behaviors
+- **Error Handling**: Comprehensive response validation and error tracking
+- **Flexible Configuration**: Environment-based configuration management
+- **Real-time Monitoring**: Built-in event logging and request tracking
+- **Scalable Architecture**: Easy to extend with new test scenarios
+
+## 📁 Project Structure
+
+├── app/
+│   ├── init.py
+│   ├── config.py          # Configuration settings
+│   └── locustfile.py      # Main test scenarios
+├── tests/
+│   └── init.py
+├── pyproject.toml         # Poetry dependencies
+├── poetry.lock
+└── README.md
+
+## 🛠️ Installation
+
+### Prerequisites
+
+- Python 3.12
+- Poetry (recommended) or pip
+
+### Using Poetry (Recommended)
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd locust-api-load-tester
+
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+```
+
+## 🚀 Usage
+
+```bash
+poetry run locust -f app/locustfile.py
+```
+
+You can access the web interface at `http://0.0.0.0:8089`
+
+## 🙏 Acknowledgments
+
+[Locust](https://github.com/locustio/locust) - Modern load testing framework
+[Poetry](https://python-poetry.org/) - Dependency management
