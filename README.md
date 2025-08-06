@@ -5,24 +5,23 @@ A comprehensive and flexible foundation for creating API load tests using Locust
 ## 🎯 Features
 
 - **Multi-endpoint Testing**: Support for GET, POST, PUT, DELETE operations
-- **User Session Management**: Stateful testing with data persistence between requests
-- **Multiple User Types**: Regular users and admin users with different behaviors
-- **Error Handling**: Comprehensive response validation and error tracking
 - **Flexible Configuration**: Environment-based configuration management
 - **Real-time Monitoring**: Built-in event logging and request tracking
 - **Scalable Architecture**: Easy to extend with new test scenarios
 
 ## 📁 Project Structure
 
+```
 ├── app/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── config.py          # Configuration settings
 │   └── locustfile.py      # Main test scenarios
 ├── tests/
-│   └── init.py
+│   └── __init__.py
 ├── pyproject.toml         # Poetry dependencies
 ├── poetry.lock
 └── README.md
+```
 
 ## 🛠️ Installation
 
