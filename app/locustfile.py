@@ -1,18 +1,18 @@
-from locust import HttpUser, task, between
-from app.config import BASE_URL, ENDPOINTS, API_KEY
-from mimesis import Field, Locale
-from mimesis.locales import Locale
+import uuid
+
+from locust import HttpUser, between, task
+
+from app.config import API_KEY, BASE_URL, ENDPOINTS
 
 
 class APIUser(HttpUser):
-    wait_time = between(1, 5)
+    wait_time = between(1, 2)
     host = BASE_URL
-    fake = Field(locale=Locale.EN)
 
-    @task(3)
+    @task(1)
     def get_endpoint(self):
-        endpoint = ENDPOINTS.get("pinata_init")
-        user_id = "lt" + self.fake("code.imei")
+        endpoint = ENDPOINTS.get("dummy")
+        user_id = uuid.uuid4()
         self.client.get(
             f"{endpoint}{user_id}/",
             headers={"Authorization": f"Api-Key {API_KEY}"},
